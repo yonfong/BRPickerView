@@ -552,30 +552,18 @@ BRSYNTH_DUMMY_CLASS(BRDatePickerView_BR)
 }
 
 - (NSString *)getYearUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     return [NSBundle br_localizedStringForKey:@"年" language:self.pickerStyle.language];
 }
 
 - (NSString *)getMonthUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     return [NSBundle br_localizedStringForKey:@"月" language:self.pickerStyle.language];
 }
 
 - (NSString *)getDayUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     return [NSBundle br_localizedStringForKey:@"日" language:self.pickerStyle.language];
 }
 
 - (NSString *)getHourUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     if (self.pickerMode == BRDatePickerModeYMDH && self.isShowAMAndPM) {
         return @"";
     }
@@ -583,16 +571,10 @@ BRSYNTH_DUMMY_CLASS(BRDatePickerView_BR)
 }
 
 - (NSString *)getMinuteUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     return [NSBundle br_localizedStringForKey:@"分" language:self.pickerStyle.language];
 }
 
 - (NSString *)getSecondUnit {
-    if (![self.pickerStyle.language hasPrefix:@"zh"]) {
-        return @"";
-    }
     return [NSBundle br_localizedStringForKey:@"秒" language:self.pickerStyle.language];
 }
 

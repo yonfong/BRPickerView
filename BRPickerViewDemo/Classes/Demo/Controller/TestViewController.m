@@ -357,10 +357,11 @@ typedef NS_ENUM(NSInteger, BRTimeType) {
         {
             // 出生时刻
             BRDatePickerView *datePickerView = [[BRDatePickerView alloc]init];
-            datePickerView.pickerMode = BRDatePickerModeHMS;
+            datePickerView.pickerMode = BRDatePickerModeHM;
             datePickerView.title = @"出生时刻";
             datePickerView.selectDate = self.birthtimeSelectDate;
             datePickerView.isAutoSelect = YES;
+            datePickerView.showUnitType = BRShowUnitTypeAll;
             datePickerView.resultBlock = ^(NSDate *selectDate, NSString *selectValue) {
                 self.birthtimeSelectDate = selectDate;
                 self.infoModel.birthtimeStr = selectValue;
